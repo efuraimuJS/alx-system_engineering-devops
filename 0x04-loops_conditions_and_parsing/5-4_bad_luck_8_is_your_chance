@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
+# loops from 1 to 10 and:
+# displays "bad luck" for the 4th iteration and "good luck" for the 8th iteration.
+# displays "Best School" for the other iterations.
 
-COUNTER=1
-while [ $COUNTER -lt 11 ]
+i=1
+while ((i <= 10))
 do
-    if [ $COUNTER = 4 ]
+    if ((i != 4 && i != 8))
     then
-        echo "bad luck"
-    elif [ $COUNTER = 8 ]
+        echo 'Best School'
+    elif ((i == 4))
     then
-        echo "good luck"
+        echo 'bad luck'
     else
-        echo "Holberton School"
+        echo 'good luck'
     fi
-    let COUNTER+=1
+	((i++))
 done

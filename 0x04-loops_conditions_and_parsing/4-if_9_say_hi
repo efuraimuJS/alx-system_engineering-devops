@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
+# displays "Best School" 10 times, using the while loop.
+# in the 9th iteration, displays Best School and then Hi on a new line.
 
-COUNTER=0
-while [ $COUNTER -lt 11 ]
+i=1
+while ((i <= 10))
 do
-    if [ $COUNTER = 9 ]
+	echo 'Best School'
+    if ((i == 9))
     then
-        echo "Hi"
-    else
-        echo "Holberton School"
+        echo 'Hi'
     fi
-    let COUNTER+=1
+	((i++))
 done
