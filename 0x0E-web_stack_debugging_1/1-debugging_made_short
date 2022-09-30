@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Sed replace 8080 for 80
-sudo sed -i 's+8080+80+g' /etc/nginx/sites-enabled/default
-sudo service nginx restart
-sudo pkill -o nginx
+# Command to make an nginx server listen on port 80, shorter version
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+pkill -1 nginx
