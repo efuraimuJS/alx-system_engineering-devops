@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#Set up and kill nginx
-sudo sed -i 's/8080 default_server/80 default_server/g' /etc/nginx/sites-enabled/default
-service nginx restart
-kill -9  "$(pgrep 'nginx'|head -1)"
+# Command to make an nginx server listen on port 80, shorter version
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+pkill -1 nginx
