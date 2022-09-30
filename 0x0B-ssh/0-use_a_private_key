@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Connect to MyServer:3.238.24.54 as user:ubuntu
+ssh -i ~/.ssh/school ubuntu@3.238.24.54
