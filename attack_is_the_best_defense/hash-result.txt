@@ -1,0 +1,2 @@
+# hashcat -a 0 -m 1800 hash.txt /usr/share/wordlists/rockyou.txt --force --show | tee hash-result.txt
+$6$08KiE7jL$.u65UaOLtm5u5fYKJJfOrZvc6GD.hKFP9YqGQuN5e7hPe4TpXB7c4SpQsqe75GHXOY92gHru6DfNjGPHQngh20:password123

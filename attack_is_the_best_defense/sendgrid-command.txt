@@ -1,0 +1,1 @@
+cat sendgrid-results.txt | grep Pass | awk {print } | base64 --decode
