@@ -6,6 +6,7 @@ of the first 10 hot posts listed for a given subreddit.
 
 import requests
 
+
 def top_ten(subreddit):
     """
         Function that queries the Reddit API
