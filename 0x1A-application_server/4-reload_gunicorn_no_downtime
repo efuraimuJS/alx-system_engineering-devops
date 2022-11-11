@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Rolling updates allow Deployments' update to take place with zero downtime
+pkill -HUP gunicorn
